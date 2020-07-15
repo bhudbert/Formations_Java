@@ -13,7 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/home', 'WelcomeController@index' );
+Route::get('/tests', 'TestsController@index' );
+
+Route::get('/suivi', 'LearningFollowUpController@index' );
+
+Route::get('/kanban-board', 'KanBanBoardController@index' );
+
+
+
+
 
 Route::get('/', function () {
     return view('welcome');
